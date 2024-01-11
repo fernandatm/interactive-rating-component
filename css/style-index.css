@@ -13,22 +13,50 @@
     background-color: #292a2a;
 }
 
-.box {
-    margin: auto;
-    padding: 2rem;
-    background-image: linear-gradient(#232322, #070803);
-    max-width: 20rem;
-    color: #ffffff;
-    border-radius: 1rem;
+.hidden {
+    display: none;
 }
 
-.box img {
+.box {
+    background-image: linear-gradient(#232322, #070803);
+    border-radius: 1rem;
+    color: #ffffff;
+    margin: auto;
+    max-width: 20rem;
+    padding: 2rem;
+}
+
+#boxResults {
+    text-align: center;
+    position: absolute;
+}
+
+#boxRate img {
     width: 2.5rem;
 }
 
-.box h1 {
+#boxRate h1 {
     margin: 1rem 0;
     font-size: 1.5rem;
+}
+
+#boxResults h1 {
+    color: #e4ac14;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 0.5rem 0;
+    background-color: #4a4a4a;
+    width: 65%;
+}
+
+#boxResults h2 {
+    margin: 1rem 0;
+    font-size: clamp(0.5rem, 1.5rem, 3rem);
+}
+
+#boxResults p {
+    font-size: 14px;
+    color:#797979;
 }
 
 .scores {
@@ -85,7 +113,6 @@ footer {
 .credits {
     width: 50%;
     text-align: center;
-    
 }
 
 .credits a {
